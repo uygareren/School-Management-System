@@ -1,0 +1,61 @@
+
+body {
+    background-color: black; /* Set background color for the entire page */
+    height: 100vh; /* Ensure body fills the entire viewport */
+    display: flex; /* Use flexbox for vertical centering */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+  }
+
+
+
+.auth-container{
+    background-color: white;
+    margin: 0 auto; 
+    width: 500px;
+    border-radius: 10px;
+
+    padding-block: 15px;
+}
+.title{
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    text-align: center;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+.input-label{
+    margin-left: 10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.input{
+    width: 80%;
+    align-self: center;
+    border: 1px solid #e6e8eb;
+    border-radius: 10px;
+
+
+    padding-inline: 8px;
+    padding-block: 15px;
+}
+.login-btn{
+    width: 80%;
+    align-self: center;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+    margin-top: 15px;
+    padding-block: 15px;
+    padding-inline: 10px;
+}

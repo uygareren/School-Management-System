@@ -1,0 +1,18 @@
+[
+    {
+      "id": 1,
+      "lecture_name": "Ders 1: Giriş",
+      "scale":10
+    },
+    {
+      "id": 2,
+      "lecture_name": "Ders 2: Temel Kavramlar",
+      "scale":9
+
+    },
+    {
+      "id": 3,
+      "lecture_name": "Ders 3: Uygulamalı Örnekler",
+      "scale":8
+    }
+  ]

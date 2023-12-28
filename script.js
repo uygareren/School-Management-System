@@ -1,12 +1,21 @@
+async function handleLogin() {
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
 
-function logCredentials() {
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+  const data = await (await fetch("./data/teacher.json")).json();
+
+  // Dolaşma ve karşılaştırma
+  for (const teacher of data) {
+    if (teacher.email === email.trim() && teacher.password === password.trim()) {
+      console.log("Giriş Başarılı!");
+
+      // Redirect to homepage.html upon successful login
+      window.location.href = "homepage.html";
         
-
-    console.log("Email:", email);
-    console.log("Password:", password);
-
-    // Add your additional logic for handling the credentials here,
-    // such as sending them to a server or storing them locally.
+      return; // Giriş başarılıysa döngüden çık
+    }
   }
+
+  // Eşleşme bulunmazsa
+  console.log("Hata: Kullanıcı adı veya parola hatalı!");
+}

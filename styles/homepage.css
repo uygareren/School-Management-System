@@ -1,0 +1,145 @@
+/* Navbar */
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0; /* Navbar'ı sola yasla */
+    height: 100vh;
+    width: 250px;
+    z-index: 100;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Navbar dikey olarak sıralansın */
+    align-items: flex-start; /* Navbar içeriğini sola yaslayın */
+  }
+  
+  .navbar li {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .navbar a:hover {
+    color: #ccc;
+  }
+
+  main{
+    margin-left: 300px;
+  }
+  /* Tablo Genel Stili */
+
+table {
+    border-collapse: collapse; /* Hücreler arasındaki boşlukları kaldırır */
+    width: 100%; /* Tabloyu tüm sayfa genişliğine yayar */
+    margin-top: 20px; /* Tablo ile navbar arasında boşluk bırakır */
+  }
+  
+  th, td {
+    padding: 10px; /* Hücrelerin içeriğine boşluk ekler */
+    text-align: left; /* Hücre içeriğini sola yaslar */
+    border: 1px solid #ddd; /* Hücre kenarlıklarını ayarlar */
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Başlık hücrelerinin arka plan rengini ayarlar */
+    font-weight: bold; /* Başlık hücrelerinin yazı tipini kalınlaştırır */
+  }
+  
+  /* Tablo Satırları */
+  
+  tr:nth-child(even) {
+    background-color: #f5f5f5; /* Çift sayılı satırların arka plan rengini ayarlar */
+  }
+  
+  /* İşlemler Sütunu */
+  
+  td:last-child {
+    text-align: center; /* İşlemler sütununu ortalar */
+  }
+
+  #add_btn{
+    padding-block: 10px;
+    padding-inline: 15px;
+    background-color: green;
+    color: white;
+    border: 1px solid green;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50vh;
+}
+.body-container{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 50px;
+    padding-block: 50px;
+    background-color: #f2eeed;
+}
+
+.lecture_input{
+    width: 120%;
+    border-radius: 10px;
+    border: 0px;
+    padding-block: 10px;
+    padding-inline: 10px;
+    
+}
+
+#label{
+    font-weight: 50;
+    font-size: 16px;
+    margin-block: 10px;
+}
+
+.lecture_save_btn{
+    margin-top: 15px;
+    padding-block: 10px;
+    padding-inline: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: 0px;
+    width: 120%;
+    cursor: pointer;
+}
+  
+  /* Responsive Navbar */
+  
+  @media (max-width: 768px) {
+    .navbar {
+      position: relative;
+      width: auto;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+    }
+  
+    .navbar li {
+      display: inline-block;
+    }
+  }
+  

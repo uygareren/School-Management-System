@@ -1,0 +1,23 @@
+[
+    {
+      "isim": "Ayşe Öğretmen",
+      "ders": "Matematik",
+      "email": "ayse.ogretmen@okul.com",
+      "password":"123456",
+      "telefon": "+90 532 123 45 67"
+    },
+    {
+      "isim": "Mehmet Öğretmen",
+      "ders": "Fen Bilimleri",
+      "email": "mehmet.ogretmen@okul.com",
+      "password":"123456",
+      "telefon": "+90 543 789 01 23"
+    },
+    {
+      "isim": "Elif Öğretmen",
+      "ders": "Türkçe",
+      "email": "elif.ogretmen@okul.com",
+      "password":"123456",
+      "telefon": "+90 554 456 78 90"
+    }
+]

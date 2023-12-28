@@ -1,0 +1,99 @@
+[
+    {
+      "id": 1,
+      "student_id": 1,
+      "lecture_id": 1,
+      "grade": 85
+    },
+    {
+      "id": 15,
+      "student_id": 1,
+      "lecture_id": 2,
+      "grade": 80
+    },
+    {
+      "id": 2,
+      "student_id": 2,
+      "lecture_id": 1,
+      "grade": 78
+    },
+    {
+      "id": 3,
+      "student_id": 3,
+      "lecture_id": 1,
+      "grade": 92
+    },
+    {
+      "id": 4,
+      "student_id": 4,
+      "lecture_id": 1,
+      "grade": 67
+    },
+    {
+      "id": 5,
+      "student_id": 5,
+      "lecture_id": 1,
+      "grade": 80
+    },
+    {
+      "id": 6,
+      "student_id": 1,
+      "lecture_id": 2,
+      "grade": 88
+    },
+    {
+      "id": 7,
+      "student_id": 2,
+      "lecture_id": 2,
+      "grade": 72
+    },
+    {
+      "id": 8,
+      "student_id": 3,
+      "lecture_id": 2,
+      "grade": 95
+    },
+    {
+      "id": 9,
+      "student_id": 4,
+      "lecture_id": 2,
+      "grade": 75
+    },
+    {
+      "id": 10,
+      "student_id": 5,
+      "lecture_id": 2,
+      "grade": 84
+    },
+    {
+      "id": 11,
+      "student_id": 1,
+      "lecture_id": 3,
+      "grade": 90
+    },
+    {
+      "id": 12,
+      "student_id": 2,
+      "lecture_id": 3,
+      "grade": 81
+    },
+    {
+      "id": 13,
+      "student_id": 3,
+      "lecture_id": 3,
+      "grade": 98
+    },
+    {
+      "id": 14,
+      "student_id": 4,
+      "lecture_id": 3,
+      "grade": 87
+    },
+    {
+      "id": 15,
+      "student_id": 5,
+      "lecture_id": 3,
+      "grade": 93
+    }
+  ]
+  

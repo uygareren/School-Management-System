@@ -32,19 +32,27 @@ saveButton.addEventListener("click", () => {
    return 0;
 
  }
-
- const newLecture = {
-     id: generateUniqueId(),
-     lecture_name: lectureNameInput.value,
-     scale: skalaInput.value,
-   };
  
+// Trim the input to remove leading and trailing whitespaces
+const trimmedLectureName = lectureNameInput.value.trim();
 
- // Add the new lecture to the existing array
- existingLectures.push(newLecture);
+// Check if the trimmed value is not a number
+if (isNaN(trimmedLectureName)) {
+  const newLecture = {
+    id: generateUniqueId(),
+    lecture_name: trimmedLectureName,
+    scale: skalaInput.value,
+  };
+  // Add the new lecture to the existing array
+  existingLectures.push(newLecture);
 
- // Update the lectures in localStorage
- localStorage.setItem("lectures", JSON.stringify(existingLectures));
+  // Update the lectures in localStorage
+  localStorage.setItem("lectures", JSON.stringify(existingLectures));
+} else {
+  alert("ÖĞRENCİ ADI GIRMELISINIZ!");
+  return 0;
+}
+
 
  console.log("existinhLectuers:", existingLectures)
 

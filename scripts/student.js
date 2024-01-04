@@ -24,13 +24,19 @@ saveButton.addEventListener("click", () => {
   const studentSurnameInput = document.querySelector("#student_surname");
   const studentSchoolIdInput = document.querySelector("#student_school_id");
 
+  // Check if the name or surname contains a number
+  if (containsNumber(studentNameInput.value) || containsNumber(studentSurnameInput.value)) {
+    alert("Öğrenci adı veya soyadı numara içeremez!");
+    return;
+  }
+
   // Get the existing students from localStorage or initialize an empty array
   existingStudents = JSON.parse(localStorage.getItem("students")) || [];
 
   // Create a new student object
   if(studentSchoolIdInput.value < 0){
-    alert("OKUL NUMARASI 0'DAN KÜÇÜK OLAMAZ");
-    return 0;
+    alert("School ID cannot be less than 0");
+    return;
   }
 
   const newStudent = {
@@ -63,6 +69,12 @@ saveButton.addEventListener("click", () => {
 
   console.log("After saving:", localStorage.getItem("students"));
 });
+
+// Helper function to check if a string contains a number
+function containsNumber(inputString) {
+  return /\d/.test(inputString);
+}
+
 
 function createTableRow(student) {
   const row = document.createElement("tr");
